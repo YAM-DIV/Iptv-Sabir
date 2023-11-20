@@ -1,0 +1,136 @@
+/* Start Variables */
+:root {
+    --red-color: #d11e38;
+    --white-color: white;
+    --blue-color: #1A87D8;
+    --black-color: black;
+}
+/* End Variables */
+
+/* Start header */
+header {
+    background: var(--white-color);
+}
+
+.section-terms {
+    max-width: 100%;
+    height: auto;
+    background-color: var(--blue-color);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar ul li a {
+    color: black;
+}
+
+header.active {
+    background-color: var(--white-color);
+    transition: 0.5s;
+}
+
+.section-terms .terms {
+    margin-top: 80px;
+    padding: 90px 0px;
+}
+
+.section-terms .terms h1 {
+    color: white;
+    font-size: 45px;
+}
+
+.section-conditions {
+    max-width: 100%;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding-bottom: 50px;
+}
+
+.section-conditions .continer {
+    border-width: 1px;
+    border-color: #fff;
+    padding-top: 13px;
+    padding-right: 32px;
+    padding-bottom: 13px;
+    padding-left: 35px;
+    box-shadow: 0px 3px 17px -5px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 65%;
+}
+
+.section-conditions .continer .p-terms {
+    padding-bottom: 1em;
+}
+
+.section-conditions .continer .p-terms p {
+    line-height: 25px;
+}
+
+.section-conditions .continer .titel-terms {
+    padding-bottom: 1em;
+}
+
+.section-conditions .continer .titel-terms h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Start responsive */
+
+@media (min-width: 767px) and (max-width: 1024px){
+
+    .section-conditions .continer {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 411px) and (max-width: 767px){
+    .section-terms .terms h1 {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .section-conditions .continer {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 317px) and (max-width: 391px){
+    .section-terms .terms h1 {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .section-conditions .continer {
+        max-width: 100%;
+    }
+}
+
+/* Pixal 5 */
+@media (min-width: 392px) and (max-width: 410px){
+    .section-terms .terms h1 {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .section-conditions .continer {
+        max-width: 100%;
+    }
+}

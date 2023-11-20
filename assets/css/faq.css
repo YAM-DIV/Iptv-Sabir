@@ -1,0 +1,78 @@
+/* Start Variables */
+:root {
+    --red-color: #d11e38;
+    --white-color: white;
+    --blue-color: #1A87D8;
+    --black-color: black;
+}
+/* End Variables */
+
+.nav-bar ul li a {
+    color: var(--black-color);
+}
+
+.pig-titel-pricing {
+    margin-top: 6%;
+    text-align: center;
+}
+
+.pig-titel-pricing h1 {
+    font-size: 70px;
+    color: var(--blue-color);
+}
+
+/* Start responsive */
+@media (max-width: 575.98px) {
+    /* CSS rules for extra small screens */
+    .pig-titel-pricing {
+        margin-top: 18%;
+    }
+
+    .pig-titel-pricing h1 {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS rules for small screens */
+    .pig-titel-pricing {
+        margin-top: 18%;
+    }
+
+    .pig-titel-pricing h1 {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules for medium screens */
+    .pig-titel-pricing {
+        margin-top: 15%;
+    }
+
+    .pig-titel-pricing h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS rules for large screens */
+    .pig-titel-pricing {
+        margin-top: 10%;
+    }
+
+    .pig-titel-pricing h1 {
+        font-size: 70px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1441px){
+    /* CSS rules for extra large screens */
+    .pig-titel-pricing {
+        margin-top: 10%;
+    }
+
+    .pig-titel-pricing h1 {
+        font-size: 80px;
+    }
+}

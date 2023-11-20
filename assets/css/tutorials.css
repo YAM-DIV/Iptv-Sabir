@@ -1,0 +1,133 @@
+/* Start Variables */
+:root {
+    --red-color: #d11e38;
+    --white-color: white;
+    --blue-color: #1A87D8;
+    --black-color: black;
+}
+/* End Variables */
+
+header {
+    background-color: var(--white-color);
+}
+
+.nav-bar ul li a {
+    color: var(--black-color);
+}
+
+/* Start Section tutorial */
+.tutorial .tutorial-img-titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.tutorial .tutorial-img-titel img {
+    max-width: 100%;
+}
+
+.tutorial .tutorial-img-titel .video-titel {
+    position: absolute;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.tutorial .tutorial-img-titel .video-titel h1 {
+    font-size: 100px;
+}
+
+.tutorial .tutorial-img-titel .video-titel .video iframe{
+    width: 800px;
+    height: 450px;
+}
+/* End Section tutorial */
+
+/* Start responsive */
+@media (max-width: 575.98px) {
+    /* CSS rules for extra small screens */
+    .tutorial {
+        margin-top: 80px;
+    }
+
+    .tutorial .tutorial-img-titel .video-titel h1 {
+        font-size: 30px;
+    }
+
+    .tutorial .tutorial-img-titel .video-titel .video iframe{
+        width: 250px;
+        height: 141px;
+    }
+}
+
+@media (max-width: 411px) {
+    .tutorial .tutorial-img-titel .video-titel .video iframe{
+        width: 200px;
+        height: 113px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS rules for small screens */
+    .tutorial {
+        margin-top: 80px;
+    }
+
+    .tutorial .tutorial-img-titel .video-titel h1 {
+        font-size: 38px;
+    }
+
+    .tutorial .tutorial-img-titel .video-titel .video iframe{
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules for medium screens */
+    .tutorial {
+        margin-top: 80px;
+    }
+
+    .tutorial .tutorial-img-titel .video-titel h1 {
+        font-size: 50px;
+    }
+
+    .tutorial .tutorial-img-titel .video-titel .video iframe{
+        width: 550px;
+        height: 309px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS rules for large screens */
+    .tutorial {
+        margin-top: 80px;
+    }
+
+    .tutorial .tutorial-img-titel .video-titel h1 {
+        font-size: 75px;
+    }
+
+    .tutorial .tutorial-img-titel .video-titel .video iframe{
+        width: 600px;
+        height: 338px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1441px){
+    /* CSS rules for extra large screens */
+    .tutorial {
+        margin-top: 80px;
+    }
+
+    .tutorial .tutorial-img-titel .video-titel h1 {
+        font-size: 85px;
+    }
+
+    .tutorial .tutorial-img-titel .video-titel .video iframe{
+        width: 700px;
+        height: 394px;
+    }
+}

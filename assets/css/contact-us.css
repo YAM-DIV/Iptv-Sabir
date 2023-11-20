@@ -1,0 +1,211 @@
+/* Start Variables */
+:root {
+    --red-color: #d11e38;
+    --white-color: white;
+    --blue-color: #1A87D8;
+    --black-color: black;
+}
+/* End Variables */
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 50px 0;
+    max-width: 100%;
+    padding: 0px 30px;
+    position: relative;
+    text-align: center;
+}
+
+.img-contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+}
+
+.img-contact-us img {
+    max-width: 40%;
+}
+
+.border-contact-us {
+    border: 2px solid var(--blue-color);
+    padding: 50px 40px;
+    background-color: var(--white-color);
+}
+
+.pig-titel-contact h1{
+    text-align: center;
+    color: var(--blue-color);
+    padding-bottom: 50px;
+}
+
+.form {
+    max-width: 500px;
+    padding: 10px 20px;
+}
+
+#message {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--blue-color);
+    -webkit-transition: 0.5s;
+    transition: 0.1s;
+    outline: none;
+}
+
+#message:focus {
+    border: 2px solid var(--red-color);
+}
+
+input[type] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--blue-color);
+    -webkit-transition: 0.5s;
+    transition: 0.1s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 2px solid var(--red-color);
+}
+
+input[type=email]:focus {
+    border: 2px solid var(--red-color);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border: none;
+    margin: 6px 0px;
+}
+
+button {
+    margin-top: 20px;
+    align-items: center;
+}
+
+#btn {
+    padding: 10px 40px;
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+/* Start responsive */
+@media (max-width: 575.98px) {
+    /* CSS rules for extra small screens */
+    .pig-titel-contact h1 {
+        font-size: 28px;
+    }
+
+    .border-contact-us {
+        padding: 30px 10px;
+    }
+
+    .img-contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+    
+    .img-contact-us img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS rules for small screens */
+    .border-contact-us {
+        padding: 30px 10px;
+    }
+
+    .img-contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+    
+    .img-contact-us img {
+        max-width: 95%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules for medium screens */
+
+    .img-contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+    
+    .img-contact-us img {
+        max-width: 85%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS rules for large screens */
+    .img-contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+    
+    .img-contact-us img {
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1441px){
+    /* CSS rules for extra large screens */
+    /* CSS rules for large screens */
+    .img-contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+    
+    .img-contact-us img {
+        max-width: 60%;
+    }
+}

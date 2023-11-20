@@ -1,0 +1,74 @@
+/* Start Variables */
+:root {
+    --red-color: #d11e38;
+    --white-color: white;
+    --blue-color: #1A87D8;
+    --black-color: black;
+}
+/* End Variables */
+
+.nav-bar ul li a {
+    color: var(--black-color);
+}
+
+.titel-channels {
+    margin-top: 150px;
+}
+
+.titel-channels h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--blue-color);
+    padding-bottom: 20px;
+}
+
+.accordion .contentBX {
+    position: relative;
+    margin: 10px 20px;
+    width: 100%;
+}
+
+.accordion .contentBX.active .content {
+    height: 800px;
+    padding: 10px;
+}
+
+.accordion {
+    padding-bottom: 40px;
+}
+
+/* Start responsive */
+@media (max-width: 575.98px) {
+    /* CSS rules for extra small screens */
+    .titel-channels {
+        margin-top: 100px;
+    }
+    
+    .titel-channels h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 800;
+        padding: 0 20px;
+        color: var(--blue-color);
+    }
+
+    .accordion .contentBX {
+        width: 90%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS rules for small screens */
+    .accordion .contentBX {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules for medium screens */
+    /* CSS rules for small screens */
+    .accordion .contentBX {
+        width: 90%;
+    }
+}

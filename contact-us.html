@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- link NavBar icon -->
+    <link rel="website icon" type="png" href="assets/imgs/JPG/icon-logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact-us.css">
+    <link rel="stylesheet" href="assets/css/pricing.css">
+    <!-- link Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Start Navbar -->
+    <header class="active">
+        <div class="logo">
+            <a href="index.html"><img src="assets/imgs/JPG/nav-logo.png" alt=""></a>
+        </div>
+        <div class="hamburger active">
+            <div class="line active"></div>
+            <div class="line active"></div>
+            <div class="line active"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a href="tutorials.html">Tutorials</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li class="active">
+                    <a href="contact-us.html" class="active">Contact Us</a>
+                </li>
+                <li>
+                    <a href="channels-list.html">Channels List</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Navbar -->
+    <!-- Start Section Contact us -->
+    <div class="pig-titel-pricing">
+        <h1>OUR SUPPORT TEAM<br>WILL HELP YOU</h1>
+    </div>
+    <div class="contact-us">
+        <div class="img-contact-us">
+            <img src="assets/imgs/JPG/contact-us-bg.png" alt="">
+        </div>
+        <div class="border-contact-us">
+            <div class="pig-titel-contact">
+                <h1>CONTACT US NOW</h1>
+            </div>
+            <div class="form">
+                <form method="post">
+                    <input type="text" placeholder="FULL NAME" id="name" autocomplete="off">
+                    <input type="email" placeholder="EMAIL" id="email" autocomplete="off">
+                    <input type="text" placeholder="SUBJECT" id="subject" autocomplete="off">
+                    <textarea id="message" placeholder="MESSAGE" cols="30" rows="10"></textarea>
+                    <button id="btn">HELP ME</button>
+                </form>
+            </div>
+            <script src="https://smtpjs.com/v3/smtp.js">
+            </script>
+            <script>
+                var btn = document.getElementById('btn');
+                btn.addEventListener('click' ,function(e){
+                    e.preventDefault()
+                    var name = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var subject = document.getElementById('subject').value;
+                    var message = document.getElementById('message').value;
+                    var body = 'name: '+name + '<br/> email: ' + email + '<br/> subject: ' +subject + '<br/> message: '+ message;
+
+
+                    Email.send({
+                        SecureToken : "c1e62940-8e78-4a18-9d05-bb840dd40d3f",
+                        To : 'contact-us@iptvsabir.com',
+                        From : "sabirelhachimi44@gmail.com",
+                        Subject : "contact message",
+                        Body : body
+                    }).then(
+                    message => alert(message)
+                    );
+
+
+                })
+            </script>
+        </div>
+    </div>
+    <!-- End Section Contact us -->
+    <footer>
+        <section class="section-footer">
+            <div class="continer-footer">
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/imgs/JPG/footer-email-icon.png" alt="">
+                        <h6>contact-us@iptvsabir.com</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1>Pages</h1>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1>Policies</h1>
+                        <ul>
+                            <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                            <li><a href="privcy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h5>© 2023 IPTVSABIR All Rights Reserved</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <!-- Start Icon whatsapp -->
+    <div id="whatsapp">
+        <a href="https://wa.me/212679455707" target="_blank" id="toggle1" class="wtsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- link Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- link js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
